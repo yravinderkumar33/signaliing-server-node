@@ -78,10 +78,10 @@ function onNewNamespace(channel, sender) {
     });
 }
 
-app.listen(process.env.PORT || 9559);
+app.listen(9559);
 
 process.on('unhandledRejection', (reason, promise) => {
     process.exit(1);
 });
 
-console.log('App is running on port: - ' + (process.env.PORT || 9559) + '');
+console.log('App is running on port: - ' + (9559) + '');
